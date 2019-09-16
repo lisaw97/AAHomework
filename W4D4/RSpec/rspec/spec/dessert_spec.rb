@@ -60,8 +60,8 @@ RSpec.describe Dessert do
 
   describe "#make_more" do
     it "calls bake on the dessert's chef with the dessert passed in" do 
-      expect(chef).to receive(:bake).with(icecream)
       icecream.make_more
+      expect(chef).to receive(:bake).with(icecream)
     end 
   end
 end
